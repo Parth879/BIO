@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ACCURATE Biomedicals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        📧 info@accuratebiomedicals.com | 📞 +91 [Your Number] | 🕐 Mon-Sat: 9:00 AM - 6:00 PM
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo-icon">🏥</div>
+                <div class="logo-text">
+                    <div class="logo-main">ACCURATE</div>
+                    <div class="logo-sub">BIOMEDICALS</div>
+                </div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html" style="color: #4a90e2;">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>About Us</h1>
+        <p>Learn more about our journey, mission, and commitment to healthcare.</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Story</h3>
+                <p>Founded in 2010, ACCURATE Biomedicals began with a simple mission: to bridge the gap between advanced medical technology and healthcare providers. What started as a small procurement agency has grown into a leading supplier of biomedical equipment across the region.</p>
+                <p>Over the years, we have built strong partnerships with global manufacturers, ensuring that our clients have access to the latest and most reliable medical technologies. Our team of experts works tirelessly to understand the unique needs of each facility, providing tailored solutions that enhance patient care.</p>
+            </div>
+            <div class="about-image-grid">
+                <div class="about-image-item">🏥</div>
+                <div class="about-image-item">📈</div>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-image-grid">
+                <div class="about-image-item">🎯</div>
+                <div class="about-image-item">🤝</div>
+            </div>
+            <div class="about-text">
+                <h3>Our Mission & Vision</h3>
+                <p><strong>Mission:</strong> To empower healthcare professionals with precise, reliable, and affordable biomedical solutions that improve patient outcomes.</p>
+                <p><strong>Vision:</strong> To be the most trusted partner in the biomedical industry, known for our integrity, innovation, and unwavering commitment to quality.</p>
+                <p>We believe that every patient deserves the best care possible, and we strive to make that a reality by ensuring that medical facilities are equipped with the best tools available.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges (Reused) -->
+    <section class="trust-section">
+        <div class="trust-badges">
+            <div class="trust-badge">
+                <div class="trust-badge-icon">✓</div>
+                <span>ISO Certified</span>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">🏆</div>
+                <span>Quality Assured</span>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">🚚</div>
+                <span>Fast Delivery</span>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">💼</div>
+                <span>Expert Support</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">ACCURATE Biomedicals</div>
+                <p>Your trusted partner for high-quality biomedical products and equipment. Serving healthcare professionals with precision and care.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">💼</a>
+                    <a href="#" class="social-link">📧</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Product Categories</h3>
+                <ul>
+                    <li><a href="products.html#diagnostic">Diagnostic Equipment</a></li>
+                    <li><a href="products.html#surgical">Surgical Instruments</a></li>
+                    <li><a href="products.html#laboratory">Laboratory Equipment</a></li>
+                    <li><a href="products.html#monitoring">Patient Monitoring</a></li>
+                    <li><a href="products.html#consumables">Medical Consumables</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p><strong>Website:</strong><br>www.accuratebiomedicals.com</p>
+                <p><strong>Email:</strong><br>info@accuratebiomedicals.com</p>
+                <p><strong>Phone:</strong><br>+91 [Your Number]</p>
+                <p><strong>Hours:</strong><br>Mon-Sat: 9:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ACCURATE Biomedicals. All rights reserved. | <a href="privacy.html" style="color: #f4a261;">Privacy Policy & Cookies</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
