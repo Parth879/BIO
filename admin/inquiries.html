@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiries - ACCURATE Biomedicals Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <img src="../logo.png" alt="ACCURATE Biomedicals">
+                </div>
+            </div>
+
+            <ul class="sidebar-menu">
+                <li class="menu-section-title">Main Menu</li>
+                <li><a href="index.html"><span class="icon">📊</span> Dashboard</a></li>
+                
+                <li class="menu-section-title">Products</li>
+                <li><a href="products.html"><span class="icon">📦</span> Products List</a></li>
+                <li><a href="categories.html"><span class="icon">📂</span> Categories</a></li>
+                
+                <li class="menu-section-title">Management</li>
+                <li><a href="inquiries.html" class="active"><span class="icon">📧</span> Contact Inquiries <span class="menu-badge">8</span></a></li>
+                <li><a href="orders.html"><span class="icon">🛒</span> Orders</a></li>
+                <li><a href="customers.html"><span class="icon">👥</span> Customers</a></li>
+                
+                <li class="menu-section-title">Settings</li>
+                <li><a href="#"><span class="icon">⚙️</span> Settings</a></li>
+                <li><a href="#"><span class="icon">🚪</span> Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <button class="menu-toggle-btn" onclick="toggleSidebar()">☰</button>
+                <div class="page-title">
+                    <h1>Contact Inquiries</h1>
+                    <div class="breadcrumb">
+                        <a href="#">Home</a> / <span>Inquiries</span>
+                    </div>
+                </div>
+                <div class="top-bar-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search inquiries...">
+                    </div>
+                    <button class="notification-btn">
+                        🔔
+                        <span class="notification-badge">8</span>
+                    </button>
+                    <div class="user-profile">
+                        <div class="user-avatar">AD</div>
+                        <div class="user-info">
+                            <h4>Admin User</h4>
+                            <p>Super Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Inquiries Page -->
+            <div class="page-section">
+                <div class="content-card">
+                    <div class="card-header">
+                        <h2>Contact Inquiries</h2>
+                        <div class="card-actions">
+                            <button class="btn btn-secondary">📥 Export</button>
+                            <button class="btn btn-secondary">🔄 Refresh</button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Subject</th>
+                                <th>Message</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Name"><strong>Dr. Rajesh Kumar</strong></td>
+                                <td data-label="Email">rajesh.kumar@cityhospital.com</td>
+                                <td data-label="Subject">Bulk Order Inquiry</td>
+                                <td data-label="Message">Interested in purchasing 50 units of digital stethoscopes...</td>
+                                <td data-label="Date">Jan 10, 2026 10:30 AM</td>
+                                <td data-label="Status"><span class="badge badge-warning">Pending</span></td>
+                                <td data-label="Actions">
+                                    <div class="action-btns">
+                                        <button class="btn btn-icon btn-success" title="Mark as Read">✓</button>
+                                        <button class="btn btn-icon btn-secondary" title="Reply">↩️</button>
+                                        <button class="btn btn-icon btn-danger" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Name"><strong>Dr. Priya Sharma</strong></td>
+                                <td data-label="Email">priya.s@medicalcenter.in</td>
+                                <td data-label="Subject">Product Information</td>
+                                <td data-label="Message">Need detailed specs for the Blood Analyzer System...</td>
+                                <td data-label="Date">Jan 10, 2026 09:15 AM</td>
+                                <td data-label="Status"><span class="badge badge-warning">Pending</span></td>
+                                <td data-label="Actions">
+                                    <div class="action-btns">
+                                        <button class="btn btn-icon btn-success" title="Mark as Read">✓</button>
+                                        <button class="btn btn-icon btn-secondary" title="Reply">↩️</button>
+                                        <button class="btn btn-icon btn-danger" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Name"><strong>Mr. Anil Mehta</strong></td>
+                                <td data-label="Email">anil.m@healthcaregroup.com</td>
+                                <td data-label="Subject">Partnership Proposal</td>
+                                <td data-label="Message">Looking to establish long-term partnership for medical supplies...</td>
+                                <td data-label="Date">Jan 9, 2026 04:20 PM</td>
+                                <td data-label="Status"><span class="badge badge-success">Replied</span></td>
+                                <td data-label="Actions">
+                                    <div class="action-btns">
+                                        <button class="btn btn-icon btn-success" title="Mark as Read">✓</button>
+                                        <button class="btn btn-icon btn-secondary" title="Reply">↩️</button>
+                                        <button class="btn btn-icon btn-danger" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Name"><strong>Dr. Sneha Patel</strong></td>
+                                <td data-label="Email">sneha.patel@diagnostics.in</td>
+                                <td data-label="Subject">Technical Support</td>
+                                <td data-label="Message">Facing issues with the microscope calibration...</td>
+                                <td data-label="Date">Jan 9, 2026 02:45 PM</td>
+                                <td data-label="Status"><span class="badge badge-info">In Progress</span></td>
+                                <td data-label="Actions">
+                                    <div class="action-btns">
+                                        <button class="btn btn-icon btn-success" title="Mark as Read">✓</button>
+                                        <button class="btn btn-icon btn-secondary" title="Reply">↩️</button>
+                                        <button class="btn btn-icon btn-danger" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Name"><strong>Mr. Vijay Singh</strong></td>
+                                <td data-label="Email">vijay.singh@medtech.co.in</td>
+                                <td data-label="Subject">Quote Request</td>
+                                <td data-label="Message">Please provide quotation for surgical instruments kit...</td>
+                                <td data-label="Date">Jan 9, 2026 11:00 AM</td>
+                                <td data-label="Status"><span class="badge badge-success">Replied</span></td>
+                                <td data-label="Actions">
+                                    <div class="action-btns">
+                                        <button class="btn btn-icon btn-success" title="Mark as Read">✓</button>
+                                        <button class="btn btn-icon btn-secondary" title="Reply">↩️</button>
+                                        <button class="btn btn-icon btn-danger" title="Delete">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    <div class="pagination">
+                        <button>← Previous</button>
+                        <button class="active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>Next →</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
