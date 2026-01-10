@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers - ACCURATE Biomedicals Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <img src="../logo.png" alt="ACCURATE Biomedicals">
+                </div>
+            </div>
+
+            <ul class="sidebar-menu">
+                <li class="menu-section-title">Main Menu</li>
+                <li><a href="index.html"><span class="icon">📊</span> Dashboard</a></li>
+                
+                <li class="menu-section-title">Products</li>
+                <li><a href="products.html"><span class="icon">📦</span> Products List</a></li>
+                <li><a href="categories.html"><span class="icon">📂</span> Categories</a></li>
+                
+                <li class="menu-section-title">Management</li>
+                <li><a href="inquiries.html"><span class="icon">📧</span> Contact Inquiries <span class="menu-badge">8</span></a></li>
+                <li><a href="orders.html"><span class="icon">🛒</span> Orders</a></li>
+                <li><a href="customers.html" class="active"><span class="icon">👥</span> Customers</a></li>
+                
+                <li class="menu-section-title">Settings</li>
+                <li><a href="#"><span class="icon">⚙️</span> Settings</a></li>
+                <li><a href="#"><span class="icon">🚪</span> Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <button class="menu-toggle-btn" onclick="toggleSidebar()">☰</button>
+                <div class="page-title">
+                    <h1>Customer Database</h1>
+                    <div class="breadcrumb">
+                        <a href="#">Home</a> / <span>Customers</span>
+                    </div>
+                </div>
+                <div class="top-bar-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search customers...">
+                    </div>
+                    <button class="notification-btn">
+                        🔔
+                        <span class="notification-badge">8</span>
+                    </button>
+                    <div class="user-profile">
+                        <div class="user-avatar">AD</div>
+                        <div class="user-info">
+                            <h4>Admin User</h4>
+                            <p>Super Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customers Page -->
+            <div class="page-section">
+                <div class="content-card">
+                    <div class="card-header">
+                        <h2>Customers</h2>
+                        <button class="btn btn-secondary">📥 Export</button>
+                    </div>
+                    <div style="padding: 2rem;">
+                        <div class="empty-state">
+                            <div class="icon">👥</div>
+                            <h3>Customer Database</h3>
+                            <p>Manage your customer relationships and contacts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ACCURATE Biomedicals Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <img src="../logo.png" alt="ACCURATE Biomedicals">
+                </div>
+            </div>
+
+            <ul class="sidebar-menu">
+                <li class="menu-section-title">Main Menu</li>
+                <li><a href="index.html" class="active"><span class="icon">📊</span> Dashboard</a></li>
+                
+                <li class="menu-section-title">Products</li>
+                <li><a href="products.html"><span class="icon">📦</span> Products List</a></li>
+                <li><a href="categories.html"><span class="icon">📂</span> Categories</a></li>
+                
+                <li class="menu-section-title">Management</li>
+                <li><a href="inquiries.html"><span class="icon">📧</span> Contact Inquiries <span class="menu-badge">8</span></a></li>
+                <li><a href="orders.html"><span class="icon">🛒</span> Orders</a></li>
+                <li><a href="customers.html"><span class="icon">👥</span> Customers</a></li>
+                
+                <li class="menu-section-title">Settings</li>
+                <li><a href="#"><span class="icon">⚙️</span> Settings</a></li>
+                <li><a href="#"><span class="icon">🚪</span> Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <button class="menu-toggle-btn" onclick="toggleSidebar()">☰</button>
+                <div class="page-title">
+                    <h1>Dashboard Overview</h1>
+                    <div class="breadcrumb">
+                        <a href="#">Home</a> / <span>Dashboard</span>
+                    </div>
+                </div>
+                <div class="top-bar-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search products, orders...">
+                    </div>
+                    <button class="notification-btn">
+                        🔔
+                        <span class="notification-badge">8</span>
+                    </button>
+                    <div class="user-profile">
+                        <div class="user-avatar">AD</div>
+                        <div class="user-info">
+                            <h4>Admin User</h4>
+                            <p>Super Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Content -->
+            <div class="page-section">
+                <!-- Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-icon">📦</div>
+                        </div>
+                        <h3>Total Products</h3>
+                        <div class="stat-number">248</div>
+                        <div class="stat-change">↑ 12% from last month</div>
+                    </div>
+
+                    <div class="stat-card yellow">
+                        <div class="stat-header">
+                            <div class="stat-icon" style="background: var(--accent-yellow-lightest); color: var(--accent-yellow);">✓</div>
+                        </div>
+                        <h3>Active Products</h3>
+                        <div class="stat-number">232</div>
+                        <div class="stat-change">↑ 8% from last month</div>
+                    </div>
+
+                    <div class="stat-card green">
+                        <div class="stat-header">
+                            <div class="stat-icon" style="background: #d1fae5; color: var(--success);">📧</div>
+                        </div>
+                        <h3>New Inquiries</h3>
+                        <div class="stat-number">28</div>
+                        <div class="stat-change">↑ 24% from last week</div>
+                    </div>
+
+                    <div class="stat-card red">
+                        <div class="stat-header">
+                            <div class="stat-icon" style="background: #fee2e2; color: var(--danger);">⚠️</div>
+                        </div>
+                        <h3>Out of Stock</h3>
+                        <div class="stat-number">16</div>
+                        <div class="stat-change negative">↑ 4 items this week</div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="content-card" style="margin-bottom: 2rem;">
+                    <div class="card-header">
+                        <h2>Quick Actions</h2>
+                    </div>
+                    <div style="padding: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <button class="btn btn-primary" onclick="openAddProductModal()">➕ Add New Product</button>
+                        <a href="products.html" class="btn btn-secondary" style="text-decoration: none;">📦 View All Products</a>
+                        <a href="inquiries.html" class="btn btn-secondary" style="text-decoration: none;">📧 Check Inquiries</a>
+                        <button class="btn btn-secondary">📊 Generate Report</button>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="content-card">
+                    <div class="card-header">
+                        <h2>Recent Products</h2>
+                        <a href="products.html" class="btn btn-secondary" style="text-decoration: none;">View All</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                                <th>Date Added</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Product">
+                                    <div class="product-cell">
+                                        <div class="product-image">🩺</div>
+                                        <div class="product-info">
+                                            <h4>Digital Stethoscope Pro</h4>
+                                            <p>SKU: DS-PRO-001</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-label="Category">Diagnostic Equipment</td>
+                                <td data-label="Status"><span class="badge badge-success">Active</span></td>
+                                <td data-label="Date Added">Jan 8, 2026</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Product">
+                                    <div class="product-cell">
+                                        <div class="product-image">💉</div>
+                                        <div class="product-info">
+                                            <h4>Premium Surgical Kit</h4>
+                                            <p>SKU: SK-PREM-002</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-label="Category">Surgical Instruments</td>
+                                <td data-label="Status"><span class="badge badge-success">Active</span></td>
+                                <td data-label="Date Added">Jan 7, 2026</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Product">
+                                    <div class="product-cell">
+                                        <div class="product-image">🔬</div>
+                                        <div class="product-info">
+                                            <h4>Digital Microscope HD</h4>
+                                            <p>SKU: DM-HD-003</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-label="Category">Laboratory Equipment</td>
+                                <td data-label="Status"><span class="badge badge-warning">Draft</span></td>
+                                <td data-label="Date Added">Jan 6, 2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals (included here if needed for Quick Actions) -->
+    <!-- Add Product Modal -->
+    <div id="addProductModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Product</h2>
+                <button class="close-modal" onclick="closeAddProductModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="addProductForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Product Name <span class="required">*</span></label>
+                            <input type="text" placeholder="e.g., Digital Stethoscope Pro" required>
+                        </div>
+                        <!-- ... (abbreviated for brevity, full form would be here if strictly needed, 
+                             but user just asked to separate pages. I will include full modal in products.html.
+                             However, Quick Actions has "Add New Product" button. So I must include it here or link to products page.)
+                             The button says "openAddProductModal()". So I should include it.
+                        -->
+                         <div class="form-group">
+                            <label>Product Code/SKU <span class="required">*</span></label>
+                            <input type="text" placeholder="e.g., DS-PRO-001" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Category <span class="required">*</span></label>
+                            <select required>
+                                <option value="">Select Category</option>
+                                <option>Diagnostic Equipment</option>
+                                <option>Surgical Instruments</option>
+                                <option>Laboratory Equipment</option>
+                                <option>Patient Monitoring</option>
+                                <option>Medical Consumables</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Price</label>
+                            <input type="text" placeholder="Contact for Pricing / ₹0,000">
+                        </div>
+                        <div class="form-group">
+                            <label>Stock Status <span class="required">*</span></label>
+                            <select required>
+                                <option value="">Select Status</option>
+                                <option>In Stock</option>
+                                <option>Out of Stock</option>
+                                <option>Pre-Order</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Manufacturer</label>
+                            <input type="text" placeholder="e.g., MedTech Solutions">
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Short Description <span class="required">*</span></label>
+                            <textarea placeholder="Brief overview of the product (displayed on product cards)" required></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Detailed Description</label>
+                            <textarea placeholder="Complete product details, specifications, and features" rows="4"></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Features/Tags</label>
+                            <div class="tag-container" id="tagContainer">
+                                <input type="text" class="tag-input" placeholder="Type and press Enter..." id="tagInput">
+                            </div>
+                            <small style="color: var(--text-light); margin-top: 0.5rem; display: block;">e.g., Bluetooth, Recording, High Accuracy</small>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Product Images</label>
+                            <div class="image-upload-area" onclick="document.getElementById('imageInput').click()">
+                                <div class="icon">📷</div>
+                                <p style="color: var(--text-medium); font-weight: 600; margin-bottom: 0.5rem;">Click to upload images</p>
+                                <p style="color: var(--text-light); font-size: 0.85rem;">PNG, JPG up to 10MB</p>
+                            </div>
+                            <input type="file" id="imageInput" multiple accept="image/*" style="display: none;">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeAddProductModal()">Cancel</button>
+                <button class="btn btn-secondary">Save as Draft</button>
+                <button class="btn btn-primary" onclick="submitProduct()">Save Product</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
