@@ -130,7 +130,7 @@ function submitProduct() {
         // or just use the filename if it was in the same folder
         data.image = fileInput.files[0].name; 
     } else {
-        data.image = "Product 1.jpeg"; // Default fallback
+        data.image = "images/Product 1.jpeg"; // Default fallback
     }
 
     if (!data.name || !data.sku) {
@@ -191,3 +191,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
