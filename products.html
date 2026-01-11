@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Products - ACCURATE Biomedicals</title>
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,11 +19,11 @@
     <header>
         <nav>
             <a href="index.html" class="logo-container">
-                <img src="logo_header.png" alt="ACCURATE Biomedicals" class="logo-full">
+                <img src="images/logo_header.png" alt="ACCURATE Biomedicals" class="logo-full">
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html" style="color: #4a90e2;">Products</a></li>
+                <li><a href="products.html" style="color: #5b9bd5;">Products</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -38,135 +38,126 @@
     <!-- Page Header -->
     <section class="page-header">
         <h1>Our Products</h1>
-        <p>Explore our wide range of high-quality biomedical equipment.</p>
+        <p>High-quality pathological instruments for accurate diagnostics and advanced research</p>
+    </section>
+
+    <!-- Category Filter -->
+    <section style="background: white; padding: 2rem; border-bottom: 1px solid var(--border-color);">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+            <button class="filter-btn active" data-category="all">All Products</button>
+            <button class="filter-btn" data-category="hematology">Hematology</button>
+            <button class="filter-btn" data-category="biochemistry">Biochemistry</button>
+            <button class="filter-btn" data-category="electrolyte">Electrolyte</button>
+        </div>
     </section>
 
     <!-- Products Section -->
     <section class="products-section">
-        <div class="products-grid">
-            <!-- Product 1 -->
-            <div class="product-card" onclick="location.href='product-detail.html'" style="cursor: pointer;">
-                <div class="product-image">
-                    <span class="product-badge">Popular</span>
-                    🩺
+        <div class="products-grid" id="productsGrid">
+            <!-- Product 1: Dynacount 3D Plus -->
+            <div class="product-card" onclick="location.href='product-detail.html'" data-category="hematology" style="cursor: pointer;">
+                <div class="product-image" style="background: white; padding: 2rem;">
+                    <img src="images/Product 1.jpeg" alt="Dynacount 3D Plus" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="product-info">
-                    <div class="product-category">Diagnostic Equipment</div>
-                    <h3><a href="product-detail.html" style="text-decoration: none; color: inherit;">Digital Stethoscope Pro</a></h3>
-                    <p>Advanced digital stethoscope with noise cancellation and recording capabilities for precise auscultation.</p>
+                    <div class="product-category">Hematology Instrument</div>
+                    <h3>Dynacount 3D Plus</h3>
+                    <p>Fully automated 3-part differential hematology analyzer with 60 samples/hour throughput.</p>
                     <div class="product-features">
-                        <span class="product-feature-tag">Bluetooth</span>
-                        <span class="product-feature-tag">Recording</span>
+                        <span class="product-feature-tag">60 Tests/Hour</span>
+                        <span class="product-feature-tag">24 Parameters</span>
                     </div>
                 </div>
             </div>
-            <!-- Product 2 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="product-badge">New</span>
-                    💉
+
+            <!-- Product 2: Dynacount 5D Pro -->
+            <div class="product-card" onclick="location.href='product-detail.html'" data-category="hematology" style="cursor: pointer;">
+                <div class="product-image" style="background: white; padding: 2rem;">
+                    <img src="images/Product 2.jpeg" alt="Dynacount 5D Pro" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="product-info">
-                    <div class="product-category">Surgical Instruments</div>
-                    <h3>Premium Surgical Kit</h3>
-                    <p>Complete set of stainless steel surgical instruments for various medical procedures.</p>
+                    <div class="product-category">Hematology Instrument</div>
+                    <h3>Dynacount 5D Pro</h3>
+                    <p>Advanced 5-part differential analyzer with flow cytometry and 36 parameters.</p>
                     <div class="product-features">
-                        <span class="product-feature-tag">Stainless Steel</span>
-                        <span class="product-feature-tag">Autoclavable</span>
+                        <span class="product-feature-tag">5-Part Diff</span>
+                        <span class="product-feature-tag">Flow Cytometry</span>
                     </div>
                 </div>
             </div>
-            <!-- Product 3 -->
-            <div class="product-card">
-                <div class="product-image">
-                    🔬
+
+            <!-- Product 3: Bios-100 -->
+            <div class="product-card" onclick="location.href='product-detail.html'" data-category="biochemistry" style="cursor: pointer;">
+                <div class="product-image" style="background: white; padding: 2rem;">
+                    <img src="images/Product 3.jpeg" alt="Bios-100" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="product-info">
-                    <div class="product-category">Laboratory Equipment</div>
-                    <h3>Digital Microscope HD</h3>
-                    <p>High-definition digital microscope with advanced imaging and connectivity features.</p>
+                    <div class="product-category">Biochemistry Instrument</div>
+                    <h3>Bios-100</h3>
+                    <p>Semi-automated biochemistry analyzer with touch interface and built-in thermal printer.</p>
                     <div class="product-features">
-                        <span class="product-feature-tag">1080p HD</span>
-                        <span class="product-feature-tag">USB Output</span>
+                        <span class="product-feature-tag">8 Filters</span>
+                        <span class="product-feature-tag">Built-in Printer</span>
                     </div>
                 </div>
             </div>
-            <!-- Product 4 -->
-            <div class="product-card">
-                <div class="product-image">
-                    📊
+
+            <!-- Product 4: Jokoh EX-Ds -->
+            <div class="product-card" onclick="location.href='product-detail.html'" data-category="electrolyte" style="cursor: pointer;">
+                <div class="product-image" style="background: white; padding: 2rem;">
+                    <img src="images/Product 4.jpeg" alt="Jokoh EX-Ds" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="product-info">
-                    <div class="product-category">Patient Monitoring</div>
-                    <h3>Vital Signs Monitor</h3>
-                    <p>Multi-parameter patient monitor for tracking vital signs in real-time.</p>
+                    <div class="product-category">Electrolyte Instrument</div>
+                    <h3>Jokoh EX-Ds</h3>
+                    <p>Fully automatic electrolyte analyzer measuring Na+, K+, Cl- with 300 tests/hour.</p>
                     <div class="product-features">
-                        <span class="product-feature-tag">Multi-parameter</span>
-                        <span class="product-feature-tag">Touchscreen</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Product 5 -->
-            <div class="product-card">
-                <div class="product-image">
-                    🌡️
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Diagnostic Equipment</div>
-                    <h3>Infrared Thermometer</h3>
-                    <p>Non-contact infrared thermometer for quick and accurate temperature measurement.</p>
-                    <div class="product-features">
-                        <span class="product-feature-tag">Non-contact</span>
-                        <span class="product-feature-tag">Fast Reading</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Product 6 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="product-badge">Bestseller</span>
-                    🩸
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Laboratory Equipment</div>
-                    <h3>Blood Analyzer System</h3>
-                    <p>Automated blood analysis system for accurate hematology testing.</p>
-                    <div class="product-features">
-                        <span class="product-feature-tag">Automated</span>
+                        <span class="product-feature-tag">300 Tests/Hour</span>
                         <span class="product-feature-tag">High Accuracy</span>
                     </div>
                 </div>
             </div>
-            <!-- Product 7 -->
-            <div class="product-card">
-                <div class="product-image">
-                    🧬
+
+            <!-- Product 5: Sensacore ST200 CL Plus -->
+            <div class="product-card" onclick="location.href='product-detail.html'" data-category="electrolyte" style="cursor: pointer;">
+                <div class="product-image" style="background: white; padding: 2rem;">
+                    <img src="images/Product 5.jpeg" alt="Sensacore ST200 CL Plus" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="product-info">
-                    <div class="product-category">Laboratory Equipment</div>
-                    <h3>Centrifuge 5000</h3>
-                    <p>High-speed centrifuge for efficient sample separation in clinical labs.</p>
+                    <div class="product-category">Electrolyte Instrument</div>
+                    <h3>Sensacore ST200 CL Plus</h3>
+                    <p>Compact semi-automatic ISE analyzer measuring Na+, K+, Cl-, iCa, Li, pH.</p>
                     <div class="product-features">
-                        <span class="product-feature-tag">5000 RPM</span>
-                        <span class="product-feature-tag">Digital Control</span>
+                        <span class="product-feature-tag">6 Parameters</span>
+                        <span class="product-feature-tag">Battery Backup</span>
                     </div>
                 </div>
             </div>
-            <!-- Product 8 -->
-            <div class="product-card">
-                <div class="product-image">
-                    🩻
+
+            <!-- Product 6: Sensacore ST200 AQUA -->
+            <div class="product-card" onclick="location.href='product-detail.html'" data-category="electrolyte" style="cursor: pointer;">
+                <div class="product-image" style="background: white; padding: 2rem;">
+                    <img src="images/Product 6.jpeg" alt="Sensacore ST200 AQUA" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="product-info">
-                    <div class="product-category">Diagnostic Equipment</div>
-                    <h3>Portable X-Ray</h3>
-                    <p>Compact and lightweight X-ray machine for mobile medical units.</p>
+                    <div class="product-category">Electrolyte Instrument</div>
+                    <h3>Sensacore ST200 AQUA</h3>
+                    <p>Semi-automated ISE analyzer with 7" HD touch display and 60 results/hour.</p>
                     <div class="product-features">
-                        <span class="product-feature-tag">Portable</span>
-                        <span class="product-feature-tag">Low Dose</span>
+                        <span class="product-feature-tag">60 Tests/Hour</span>
+                        <span class="product-feature-tag">HD Touch</span>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="cta-banner-content">
+            <h2>Need Help Choosing the Right Instrument?</h2>
+            <p>Our expert team is ready to help you select the perfect pathological instruments for your laboratory needs.</p>
+            <a href="contact.html" class="cta-button">Request a Quote</a>
         </div>
     </section>
 
@@ -175,7 +166,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <div class="footer-logo">ACCURATE Biomedicals</div>
-                <p>Your trusted partner for high-quality biomedical products and equipment. Serving healthcare professionals with precision and care.</p>
+                <p>Your trusted partner for high-quality pathological instruments and premium chemicals. Founded in 2023, backed by 25+ years of collective experience.</p>
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
@@ -188,25 +179,21 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Product Categories</h3>
-                <ul>
-                    <li><a href="products.html#diagnostic">Diagnostic Equipment</a></li>
-                    <li><a href="products.html#surgical">Surgical Instruments</a></li>
-                    <li><a href="products.html#laboratory">Laboratory Equipment</a></li>
-                    <li><a href="products.html#monitoring">Patient Monitoring</a></li>
-                    <li><a href="products.html#consumables">Medical Consumables</a></li>
-                </ul>
+                <h3>Our Locations</h3>
+                <p><strong>Head Office:</strong><br>Ahmedabad, Gujarat</p>
+                <p><strong>Branch Office:</strong><br>Nashik, Maharashtra</p>
+                <p style="margin-top: 1rem;"><strong>Service:</strong> Pan-India Coverage</p>
             </div>
             <div class="footer-section">
                 <h3>Contact Information</h3>
                 <p><strong>Website:</strong><br>www.accuratebiomedicals.com</p>
                 <p><strong>Email:</strong><br>info@accuratebiomedicals.com</p>
-                <p><strong>Phone:</strong><br>+91 [Your Number]</p>
+                <p><strong>Phone:</strong><br>+91-97249 04343</p>
                 <p><strong>Hours:</strong><br>Mon-Sat: 9:00 AM - 6:00 PM</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 ACCURATE Biomedicals. All rights reserved. | <a href="privacy.html" style="color: #f4a261;">Privacy Policy & Cookies</a></p>
+            <p>&copy; 2023-2026 ACCURATE Biomedicals. All rights reserved. | <a href="privacy.html" style="color: #f9c74f;">Privacy Policy & Cookies</a></p>
         </div>
     </footer>
 
@@ -216,7 +203,71 @@
 
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // Category Filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const category = btn.dataset.category;
+
+                productCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
         });
     </script>
+
+    <style>
+        .filter-btn {
+            padding: 0.8rem 1.8rem;
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 50px;
+            color: var(--text-medium);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--primary-blue);
+            color: var(--primary-blue);
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light));
+            color: white;
+            border-color: var(--primary-blue);
+        }
+
+        .product-image img {
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+    </style>
 </body>
 </html>

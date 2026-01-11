@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACCURATE Biomedicals - Home</title>
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,7 +19,7 @@
     <header>
         <nav>
             <a href="index.html" class="logo-container">
-                <img src="logo_header.png" alt="ACCURATE Biomedicals" class="logo-full">
+                <img src="images/logo_header.png" alt="ACCURATE Biomedicals" class="logo-full">
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
@@ -234,93 +234,99 @@
             <p class="section-description">Explore our carefully curated selection of high-quality biomedical equipment
                 and supplies.</p>
         </div>
-        <div class="products-grid">
+        <!-- Product 1: Dynacount 3D Plus -->
+        <div class="products-grid" id="productsGrid">
+            <div class="product-card" onclick="location.href='product-detail.html?id=dynacount-3d'" style="cursor: pointer;">
+                <div class="product-image" style="background: white; padding: 2rem;">
+                    <img src="images/Product 1.jpeg" alt="Dynacount 3D Plus" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Hematology Instrument</div>
+                    <h3>Dynacount 3D Plus</h3>
+                    <p>Fully automated 3-part differential hematology analyzer with 60 samples/hour throughput.</p>
+                    <div class="product-features">
+                        <span class="product-feature-tag">60 Tests/Hour</span>
+                        <span class="product-feature-tag">24 Parameters</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2: Dynacount 5D Pro -->
             <div class="product-card" onclick="location.href='product-detail.html'" style="cursor: pointer;">
-                <div class="product-image">
-                    <span class="product-badge">Popular</span>
-                    🩺
+                <div class="product-image" style="background: white; padding: 2rem;">
+                    <img src="images/Product 2.jpeg" alt="Dynacount 5D Pro" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="product-info">
-                    <div class="product-category">Diagnostic Equipment</div>
-                    <h3><a href="product-detail.html" style="text-decoration: none; color: inherit;">Digital Stethoscope
-                            Pro</a></h3>
-                    <p>Advanced digital stethoscope with noise cancellation and recording capabilities for precise
-                        auscultation.</p>
+                    <div class="product-category">Hematology Instrument</div>
+                    <h3>Dynacount 5D Pro</h3>
+                    <p>Advanced 5-part differential analyzer with flow cytometry and 36 parameters.</p>
                     <div class="product-features">
-                        <span class="product-feature-tag">Bluetooth</span>
-                        <span class="product-feature-tag">Recording</span>
+                        <span class="product-feature-tag">5-Part Diff</span>
+                        <span class="product-feature-tag">36 Parameters</span>
                     </div>
                 </div>
             </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="product-badge">New</span>
-                    💉
+
+            <!-- Product 3: Bios-100 -->
+            <div class="product-card" onclick="location.href='product-detail.html'" style="cursor: pointer;">
+                <div class="product-image" style="background: white; padding: 2rem;">
+                    <img src="images/Product 3.jpeg" alt="Bios-100" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="product-info">
-                    <div class="product-category">Surgical Instruments</div>
-                    <h3>Premium Surgical Kit</h3>
-                    <p>Complete set of stainless steel surgical instruments for various medical procedures.</p>
+                    <div class="product-category">Biochemistry Instrument</div>
+                    <h3>Bios-100</h3>
+                    <p>Semi-automated biochemistry analyzer with touch interface and built-in thermal printer.</p>
                     <div class="product-features">
-                        <span class="product-feature-tag">Stainless Steel</span>
-                        <span class="product-feature-tag">Autoclavable</span>
+                        <span class="product-feature-tag">8 Filters</span>
+                        <span class="product-feature-tag">Built-in Printer</span>
                     </div>
                 </div>
             </div>
-            <div class="product-card">
-                <div class="product-image">
-                    🔬
+
+            <!-- Product 4: Jokoh EX-Ds -->
+            <div class="product-card" onclick="location.href='product-detail.html'" style="cursor: pointer;">
+                <div class="product-image" style="background: white; padding: 2rem;">
+                    <img src="images/Product 4.jpeg" alt="Jokoh EX-Ds" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <div class="product-info">
-                    <div class="product-category">Laboratory Equipment</div>
-                    <h3>Digital Microscope HD</h3>
-                    <p>High-definition digital microscope with advanced imaging and connectivity features.</p>
+                    <div class="product-category">Electrolyte Instrument</div>
+                    <h3>Jokoh EX-Ds</h3>
+                    <p>Fully automatic electrolyte analyzer measuring Na+, K+, Cl- with 300 tests/hour.</p>
                     <div class="product-features">
-                        <span class="product-feature-tag">1080p HD</span>
-                        <span class="product-feature-tag">USB Output</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    📊
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Patient Monitoring</div>
-                    <h3>Vital Signs Monitor</h3>
-                    <p>Multi-parameter patient monitor for tracking vital signs in real-time.</p>
-                    <div class="product-features">
-                        <span class="product-feature-tag">Multi-parameter</span>
-                        <span class="product-feature-tag">Touchscreen</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    🌡️
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Diagnostic Equipment</div>
-                    <h3>Infrared Thermometer</h3>
-                    <p>Non-contact infrared thermometer for quick and accurate temperature measurement.</p>
-                    <div class="product-features">
-                        <span class="product-feature-tag">Non-contact</span>
-                        <span class="product-feature-tag">Fast Reading</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="product-badge">Bestseller</span>
-                    🩸
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Laboratory Equipment</div>
-                    <h3>Blood Analyzer System</h3>
-                    <p>Automated blood analysis system for accurate hematology testing.</p>
-                    <div class="product-features">
-                        <span class="product-feature-tag">Automated</span>
+                        <span class="product-feature-tag">300 Tests/Hour</span>
                         <span class="product-feature-tag">High Accuracy</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5: Sensacore ST200 CL Plus -->
+            <div class="product-card" onclick="location.href='product-detail.html'" style="cursor: pointer;">
+                <div class="product-image" style="background: white; padding: 2rem;">
+                    <img src="images/Product 5.jpeg" alt="Sensacore ST200 CL Plus" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Electrolyte Instrument</div>
+                    <h3>Sensacore ST200 CL Plus</h3>
+                    <p>Compact semi-automatic ISE analyzer measuring Na+, K+, Cl-, iCa, Li, pH.</p>
+                    <div class="product-features">
+                        <span class="product-feature-tag">6 Parameters</span>
+                        <span class="product-feature-tag">Battery Backup</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6: Sensacore ST200 AQUA -->
+            <div class="product-card" onclick="location.href='product-detail.html'" style="cursor: pointer;">
+                <div class="product-image" style="background: white; padding: 2rem;">
+                    <img src="images/Product 6.jpeg" alt="Sensacore ST200 AQUA" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Electrolyte Instrument</div>
+                    <h3>Sensacore ST200 AQUA</h3>
+                    <p>Semi-automated ISE analyzer with 7" HD touch display and 60 results/hour.</p>
+                    <div class="product-features">
+                        <span class="product-feature-tag">60 Tests/Hour</span>
+                        <span class="product-feature-tag">HD Touch</span>
                     </div>
                 </div>
             </div>

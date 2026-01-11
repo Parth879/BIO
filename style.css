@@ -2098,3 +2098,12 @@ footer {
         color: #000;
     }
 }
+
+/* Product Image Hover Effects */
+.product-image img {
+    transition: transform 0.3s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
